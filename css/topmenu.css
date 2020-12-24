@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+* { outline: 1px solid red;}
+    body{
+      margin: 0px;
+    }
+    ul{
+      list-style-type: none;
+      padding-left: 0px;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    #topOfTheWorld{
+        background-color: #49599b;
+        height: 20px;
+    }
+    .navbar{
+      display: flex;
+      background-color: #7986cc;
+      
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 10px;
+    }
+    .navbar .navbar-logo,
+    .navbar .navbar-menu,
+    .navbar .navbar-sns{
+      display: flex;
+    }
+    /* GNB 메뉴 */
+    .navbar .navbar-menu li{
+        padding: 4px 8px;
+        font-size: 15px;
+        margin: 0 3px;
+    }
+    .navbar .navbar-menu li:hover{
+        background-color: tomato;
+        border-radius: 10px;
+        padding: 4px 8px;
+        font-size: 15px;
+        margin: 0 3px;
+    }
+    .navbar #hamburger{
+      display: none;
+      position:absolute;
+      top:26px; right:10px;
+      font-size: 2em;
+    }
+    /* logo */
+    .navbar .navbar-logo li{
+        margin-right: 10px;
+        font-size: 1.34em;
+    }
+    /* sns */
+    .navbar .navbar-sns li{
+        margin:0 5px;
+    }
+
+
+    @media screen and (max-width:767px){
+      .navbar,
+      .navbar .navbar-menu {
+        flex-direction: column;
+      }
+      .navbar #hamburger{
+        display: block;
+      }
+      .navbar .navbar-menu,
+      .navbar .navbar-sns{
+        display: none;
+        text-align: center;
+      }
+      .navbar .navbar-sns{
+          margin: 0 10px;
+      }
+      .navbar .navbar-logo{
+        align-self: flex-start;
+      }
+      .navbar .navbar-logo.active{
+        align-self: center;
+      }
+      .navbar .navbar-menu.active,
+      .navbar .navbar-sns.active{
+        display: flex;
+      }
+      .navbar .navbar-menu.active{
+          width: 300px;
+      }      
+
+    }
