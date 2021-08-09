@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "안재길"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/cat.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "아주 오래 개발을 하고 싶은 사람"
   location         : "Ulsan donggu"
   email            : 
